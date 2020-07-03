@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
   # Create a new hash
   pivoted_hash = {}
   
-  # Loop over combined_names array and store the keys color, gender, and lives
+  # Loop over combined_names array and store the keys color gender, and lives
   combined_names.each do |pigeon_name|
     pivoted_hash[pigeon_name] = {
       :color => [],
@@ -16,7 +16,8 @@ def nyc_pigeon_organizer(data)
     }
   end
   
-  
+  # Now we need to loop over the keys in the data given to us.
+  pivoted_hash
 end
 
 pigeon_data = {
