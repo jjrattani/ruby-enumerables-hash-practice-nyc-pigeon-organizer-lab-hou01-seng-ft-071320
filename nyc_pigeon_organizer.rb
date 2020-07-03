@@ -31,5 +31,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  puts pivoted_hash
   pivoted_hash
 end
