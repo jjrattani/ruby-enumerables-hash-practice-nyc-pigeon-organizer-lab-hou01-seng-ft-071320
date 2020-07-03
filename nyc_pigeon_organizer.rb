@@ -1,8 +1,22 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
-  # We need a complete list of pigeons, so we can make our keys
-  # Combine gender -> male and gender -> female into one list.
+  # We need a complete array of pigeons, so we can make our keys
+  # Combine gender -> male and gender -> female into one array.
   combined_names = data[:gender][:male] + data[:gender][:female]
+  
+  # These names need to be in a new hash as keys
+  # Create a new hash
+  pivoted_hash = {}
+  
+  # Loop over combined_names array and store the keys color, gender, and lives
+  combined_names.each do |pigeon_name|
+    pivoted_hash[pigeon_name] = {
+      :color => [],
+      :gender => [],
+      :lives => []
+    }
+  end
+  
+  
 end
 
 pigeon_data = {
