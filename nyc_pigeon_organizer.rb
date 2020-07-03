@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
   end
   
   # Now we need to loop over the keys in the data given to us.
-  pivoted_hash.each do |parent_key, parent_hash|
+  data.each do |parent_key, parent_hash|
     # parent_key will either be color, gender or lives.  parent_hash is color => purple for example.
     
     # Loop over the parent_hashes.  This will return the nested keys in the hash, such as color -> purple -> array_of_names for example.
