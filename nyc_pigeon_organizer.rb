@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
       # We need to loop over each child array to get the names of each corresponding pigeon and store them into our pivoted_hash
       child_array.each do |pigeon_name|
         #pigeon name consists of "Theo", or "Peter. Jr".  These names are keys in our pivoted hash.  
-        pivoted_hash[pigeon_name][parent_key].push(child_key)
+        pivoted_hash[pigeon_name][parent_key.to_s].push(child_key.to_s)
       end
     end
   end
